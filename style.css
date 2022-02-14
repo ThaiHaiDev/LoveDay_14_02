@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+}
+body
+{
+    min-height: 100vh;
+    background: #111;
+    overflow: hidden;
+}
+span
+{
+    position: absolute;
+    pointer-events: none;
+}
+span::before
+{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(21.svg.png);
+    background-size: cover;
+    animation: moveShape 1s linear infinite;
+}
+@keyframes moveShape
+{
+    0%
+    {
+        transform: translate(300px) rotate(360deg);
+    }
+}
